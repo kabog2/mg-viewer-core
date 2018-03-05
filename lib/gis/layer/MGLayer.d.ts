@@ -1,0 +1,40 @@
+/// <reference types="openlayers" />
+import { MGBase, MGConfigLayer } from '../../all';
+import * as ol from 'openlayers';
+export declare abstract class MGLayer extends MGBase {
+    id: string;
+    label: string | undefined;
+    description: string | undefined;
+    _olLayer: ol.layer.Base;
+    _zIndex: number;
+    _opacity: number;
+    _minResolution: number | undefined;
+    _maxResolution: number | undefined;
+    _extent: [number, number, number, number] | undefined;
+    _visible: boolean;
+    _tiled: boolean;
+    _selected: boolean;
+    _config: MGConfigLayer;
+    _loadCapabilities: boolean;
+    _urlCapabilities: string;
+    _capabilities: any;
+    projection: string;
+    cors: boolean | undefined;
+    proxy: boolean | undefined;
+    configure(config: MGConfigLayer): void;
+    abstract createLayer(config: MGConfigLayer): ol.layer.Base;
+    parseCapabilities(capabilities: string): any;
+    load(): Promise<any>;
+    configureCapabilities(): void;
+    getCapabilities(): Promise<any>;
+    olLayer: ol.layer.Base;
+    zIndex: number;
+    opacity: number;
+    minResolution: number | undefined;
+    maxResolution: number | undefined;
+    extent: [number, number, number, number] | undefined;
+    visible: boolean;
+    tiled: boolean;
+    selected: boolean;
+}
+export default MGLayer;
