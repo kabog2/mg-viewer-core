@@ -1,0 +1,1 @@
+export { MGModulesMgr } from './MGModulesMgr';
