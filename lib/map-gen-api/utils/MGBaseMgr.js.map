@@ -1,1 +1,0 @@
-{"version":3,"file":"MGBaseMgr.js","sourceRoot":"","sources":["../../../src/map-gen-api/utils/MGBaseMgr.ts"],"names":[],"mappings":";;;;;;;;;;;IAAA,+BAA6B;IAE7B,eAAuB,SAAQ,YAAM;QAGjC,IAAI,IAAI,CAAC,IAAY;YACjB,SAAS,CAAC,OAAO,GAAC,IAAI,CAAC;QAC3B,CAAC;QACJ,IAAI,IAAI;YACP,MAAM,CAAC,SAAS,CAAC,OAAO,CAAC;QAC1B,CAAC;KACD;IATD,8BASC;IAED,kBAAe,SAAS,CAAC"}
