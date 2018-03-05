@@ -1,0 +1,43 @@
+{
+  "name": "viewer-core",
+  "version": "1.0.1-3",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "prerelease": "npm version prerelease",
+    "prepare": "npm run build",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabog2/mg-viewer-core.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabog2/mg-viewer-core/issues"
+  },
+  "homepage": "https://github.com/kabog2/mg-viewer-core#readme",
+  "devDependencies": {
+    "@types/jest": "^22.1.4",
+    "@types/jsts": "^0.17.0",
+    "@types/proj4": "^2.3.4",
+    "jest": "^22.4.2",
+    "ts-jest": "^22.4.1",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "jsts": "^1.6.0",
+    "openlayers": "^4.6.4",
+    "@types/openlayers": "^4.6.1",
+    "proj4": "^2.4.4"
+  },
+  "files": [
+    "lib"
+  ]
+}
